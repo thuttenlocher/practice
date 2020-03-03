@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Feb  2 14:10:28 2017
+
+@author: huttenlochet
+"""
+
+import control
+
+wn=1
+zeta=.7
+
+G=control.tf((wn*wn),[1,(2*wn*zeta),(wn*wn)])
+
+y,t=control.step_response(G)
+
+
+plot(y,t)
+xlabel("Time")
+ylabel("Displacement")
+title("Step Response")
+
