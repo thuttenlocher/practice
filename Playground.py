@@ -8,32 +8,35 @@ Created on Thu Feb 27 21:12:10 2020
 
 
 
+mood = "impatient"
 
-entered = "abc123"
-password = "abc123"
-tries = 3
-
-#Above we've created three variables representing an attempt
-#to enter a password. Add some code below that will print the
-#result of this check:
+#We've written some code below that prints out what kind of
+#tea we want to  buy based on our mood. The code has an error,
+#though. Rewrite the code so that it runs with the correct
+#output.
 #
-# - "Login successful." if entered is the same as password
-#   and tries is less than or equal to 3.
-# - "Incorrect password." if entered is not the same as 
-#   password, but tries is less than or equal to 3.
-# - "Tries exceeded." if tries is greater than 3.
+#The correct output if mood is one of the expected moods
+#(sad, anxious, tired) is the name of the tea and the cost.
+#The correct output if mood is not one of the expected moods
+#is None and "free".
 #
-#You don't need to worry about incrementing tries if the
-#password is incorrect.
+#Hint: this is a scope problem!
 
-
-if entered == password and tries <=3:
-    print("Login successful.")
+if mood == "sad":
+    tea = "oolong"
+    cost = 3.99
+elif mood == "anxious":
+    tea = "green tea"
+    cost = 5.45
+elif mood == "tired":
+    tea = "english breakfast"
+    cost = 4.35
 else:
-    if entered != password and tries <=3:
-        print("Incorrect password.")
-    else:
-        print("Tries exceeded.")
+    tea = None
+    cost = "free"
+
+print(tea)
+print(cost)
 
 
 
