@@ -8,37 +8,25 @@ Created on Thu Feb 27 21:12:10 2020
 
 
 
-mood = "impatient"
+mystery_int = 5
 
-#We've written some code below that prints out what kind of
-#tea we want to  buy based on our mood. The code has an error,
-#though. Rewrite the code so that it runs with the correct
-#output.
+#In math, factorial is a mathematical operation where an
+#integer is multipled by every number between itself and 1.
+#For example, 5 factorial is 5 * 4 * 3 * 2 * 1, or 120.
+#Factorial is represented by an exclamation point: 5!
 #
-#The correct output if mood is one of the expected moods
-#(sad, anxious, tired) is the name of the tea and the cost.
-#The correct output if mood is not one of the expected moods
-#is None and "free".
+#Use a for loop to calculate the factorial of the number
+#given by mystery_int above. Then, print the result.
 #
-#Hint: this is a scope problem!
+#Hint: Running a loop from 1 to mystery_int will give you
+#all the integers you need to multiply together. You'll need
+#to track the total product using a variable declared before
+#starting the loop, though!
+num = 1
 
-if mood == "sad":
-    tea = "oolong"
-    cost = 3.99
-elif mood == "anxious":
-    tea = "green tea"
-    cost = 5.45
-elif mood == "tired":
-    tea = "english breakfast"
-    cost = 4.35
-else:
-    tea = None
-    cost = "free"
-
-print(tea)
-print(cost)
-
-
+for i in range(1, mystery_int + 1):
+    num = i * num
+print(num)
 
 
 
