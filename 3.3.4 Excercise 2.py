@@ -5,9 +5,9 @@ Created on Sat Mar 14 12:33:33 2020
 @author: Tyler H
 """
 
-mystery_int_1 = 3
-mystery_int_2 = 2
-mystery_int_3 = 1
+mystery_int_1 = 2
+mystery_int_2 = 3
+mystery_int_3 = 4
 
 #You may modify the lines of code above, but don't move them!
 #When you Submit your code, we'll change these lines to
