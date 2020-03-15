@@ -22,8 +22,3 @@ while mystery_value <= 100:
 
 
 
-
-
-
-
-
